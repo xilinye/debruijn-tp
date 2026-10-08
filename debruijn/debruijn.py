@@ -17,17 +17,14 @@ import argparse
 import os
 import sys
 from pathlib import Path
+import networkx as nx
 from networkx import (
     DiGraph,
     all_simple_paths,
     lowest_common_ancestor,
-    has_path,
-    random_layout,
-    draw,
-    spring_layout,
+    has_path
 )
 import matplotlib
-from operator import itemgetter
 import random
 
 random.seed(9001)
